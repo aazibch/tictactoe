@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Tic Tac Toe</title>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <header class="text-center">
+            <h1>Tic Tac Toe</h1>
+        </header>
+        
+        <main>
+            <div id="choose-sign" class="text-center">
+                <p>Which sign would you like?</p>
+                <span class="sign">X</span>
+                <span class="sign">O</span>
+            </div>
+            
+            <div id="loading-screen" class="text-center hidden">
+                <span id="loading-label">Loading...</span>
+                <div id="progress">
+                    <div id="progress-bar">
+                    </div>
+                </div>
+            </div>
+            
+            <div id="game" class="hidden">
+                <div id="top-bar">
+                    <span id="turn"></span>
+                </div>
+
+                <div id="board">
+                    <table>
+                        <tr>
+                            <td id="0" class="cell"></td>
+                            <td id="1" class="cell"></td>
+                            <td id="2" class="cell"></td>
+                        </tr>
+                        <tr>
+                            <td id="3" class="cell"></td>
+                            <td id="4" class="cell"></td>
+                            <td id="5" class="cell"></td>
+                        </tr>
+                        <tr>
+                            <td id="6" class="cell"></td>
+                            <td id="7" class="cell"></td>
+                            <td id="8" class="cell"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="bottom-bar">
+                    <div id="scores" class="pull-left">
+                        <div class="player-score text-center">
+                            <span>
+                                <strong>Human</strong>
+                            </span>
+                            <span id="human-score">0</span>
+                        </div>
+                        <div class="player-score text-center">
+                            <span>
+                                <strong>Computer</strong>
+                            </span>
+                            <span id="computer-score">0</span>
+                        </div>
+                    </div>
+
+                    <div id="button-container" class="text-center pull-right">
+                        <button id="reset-button" class="btn btn-danger btn-sm" type="button">Reset</button>
+                    </div>
+                </div>
+
+                <div id="result" class="text-center">
+                    <p></p>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="text-center">
+            <p class="small">Programmed by Aazib Chaudhry.</p>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

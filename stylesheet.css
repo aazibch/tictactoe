@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter|Barlow');
+
+h1 {
+    font-size: 45px;
+    font-family: 'Barlow', sans-serif;
+}
+
+main {
+    background: #FAFAFB;
+    border: 3px solid #242729;
+    border-radius: 5px;
+    width: 355px;
+    height: 418px;
+    margin: 30px auto 35px auto;
+    -webkit-box-shadow: 0 3px 5px 0px rgba(128,128,128,0.5), 0 0 10px rgba(128,128,128,0.75);
+    -moz-box-shadow: 0 3px 5px 0px rgba(128,128,128,0.5), 0 0 10px rgba(128,128,128,0.75);
+    box-shadow: 0 3px 5px 0px rgba(128,128,128,0.5), 0 0 10px rgba(128,128,128,0.75);
+    position: relative;
+}
+
+/* #choose-sign */
+#choose-sign {
+    font-size: 30px;
+    border-top: 30px solid #242729;
+    border-bottom: 30px solid #242729;
+    height: 100%;
+    width: 100%;
+}
+
+#choose-sign p {
+    margin-top: 100px;
+}
+
+#choose-sign span {
+    font-size: 50px;
+    font-family: 'Architects Daughter', cursive;
+    margin: 0 20px;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    line-height: 1;
+    cursor: pointer;
+    color: #7C7C7C;
+}
+
+#choose-sign span:hover {
+    border-bottom: 3px solid #696969;
+}
+
+/* #loading-screen */
+#loading-screen {
+    border-top: 30px solid #242729;
+    border-bottom: 30px solid #242729;
+    height: 100%;
+    width: 100%;
+}
+
+#progress {
+    width: 300px;
+    background: #ddd;
+    margin: 0 auto;
+}
+
+#progress-bar {
+    width: 1%;
+    height: 25px;
+    background: #242729;
+}
+
+#loading-label {
+    display: block;
+    margin-top: 140px;
+    margin-bottom: 5px;
+}
+
+/* #game */
+table {
+    border-collapse: collapse;
+    margin: 20px 0 20px -150px;
+    position: absolute;
+    left: 50%;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #7C7C7C;
+    cursor: pointer;
+    text-align: center;
+    font-size: 65px;
+    font-family: 'Architects Daughter', cursive;
+    color: #7C7C7C;
+}
+
+tr:first-child td {
+    border-top: none;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+td:first-child {
+    border-left: none;
+}
+
+td:last-child {
+    border-right: none;
+}
+
+#top-bar {
+    background: #242729;
+    color: #f2f2f2;
+    padding: 2px 5px 5px;
+}
+
+#turn {
+    display: inline-block;
+    height: 15px;
+}
+
+#bottom-bar {
+    overflow: auto;
+    background: #242729;
+    color: #f2f2f2;
+    padding: 4px 5px 1px 5px;
+}
+
+#board {
+    height: 340px;
+}
+
+.player-score:first-child {
+    margin-right: 5px;
+}
+
+.player-score {
+    display: inline-block;
+}
+
+.player-score span {
+    display: block;
+}
+
+#reset-button {
+    margin-top: 6px;
+}
+
+#result {
+    width: 300px;
+    background: rgba(0, 0, 0, 0.85);
+    font-size: 23px;
+    color: #f2f2f2;
+    border-radius: 3px;
+    position: absolute;
+    top: 145px;
+    left: 50%;
+    margin-left: -150px;
+    padding: 40px;
+    display: none;
+}
+
+#result p {
+    line-height: 1;
+    margin: 0;
+}
